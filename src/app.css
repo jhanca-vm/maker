@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    font-size: 0.9375rem;
+    font-weight: 500;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+    font-weight: 800;
+  }
+
+  p {
+    color: theme('colors.neutral');
+    line-height: 1.5625rem;
+  }
+}
