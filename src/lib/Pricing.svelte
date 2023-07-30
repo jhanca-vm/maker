@@ -17,16 +17,19 @@
   }
 </script>
 
-<section class="my-36 px-6 text-center">
-  <h2 class="mb-7">Our pricing plans</h2>
-  <p>
+<section class="px-6 text-center">
+  <h2 class="mb-7 lg:mb-6">Our pricing plans</h2>
+  <p class="max-w-xl mx-auto">
     We only make money when our creators make money. Our plans are always
     affordable, and it’s completely free to get started.
   </p>
-  <div class="mt-20 grid gap-y-16 text-left">
-    <article class="px-7 py-8 bg-secondary rounded-lg">
-      <h3 class="mb-5">Dip your toe</h3>
-      <p class="text-white/60">
+  <div
+    class="mt-14 flex flex-col gap-8 text-left items-center lg:mt-16 lg:flex-row
+      lg:justify-center"
+  >
+    <article class="max-w-md px-7 py-8 bg-secondary rounded-lg sm:p-9">
+      <h3 class="mb-5 leading-none">Dip your toe</h3>
+      <p class="max-w-[23.5rem] text-white/60">
         Just getting started? No problem at all! Our free plan will take you a
         long way.
       </p>
@@ -40,9 +43,12 @@
         {/each}
       </ul>
     </article>
-    <article class="px-7 py-8 bg-primary text-accent rounded-lg">
-      <h3 class="mb-5">Dive right in</h3>
-      <p class="text-accent/60">
+    <article
+      class="max-w-md px-7 py-8 bg-primary text-accent rounded-lg sm:p-9
+        lg:py-11"
+    >
+      <h3 class="mb-5 leading-none">Dive right in</h3>
+      <p class="max-w-[23.5rem] text-accent/60">
         Ready for the big time? Our paid plan will help you take your business
         to the next level.
       </p>

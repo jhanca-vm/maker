@@ -15,7 +15,10 @@
   <meta name="description" content="Get paid for the work you love to do." />
 </svelte:head>
 
-<header class="flex justify-center pt-10">
+<header
+  class="flex justify-center pt-10 sm:justify-start sm:pt-12 sm:px-10 lg:pt-10
+    xl:max-w-6xl xl:mx-auto xl:px-0"
+>
   <img src={logo} alt="maker" width="120" height="35" />
 </header>
 <main>

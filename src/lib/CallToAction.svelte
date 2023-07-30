@@ -23,10 +23,17 @@
   }
 </script>
 
-<section class="bg-no-repeat bg-top my-36 px-6 text-center">
-  <h2 class="w-60 mx-auto">Get notified when we launch</h2>
-  <form class="mt-8 grid gap-y-6" on:submit|preventDefault={handleSubmit}>
-    <div>
+<section
+  class="bg-no-repeat bg-top my-36 px-6 text-center sm:bg-right sm:my-30 sm:py-4
+    lg:mt-36 lg:mb-28 lg:pt-12 lg:pb-11"
+>
+  <h2 class="w-60 mx-auto sm:w-auto">Get notified when we launch</h2>
+  <form
+    class="max-w-[29.75rem] mx-auto mt-8 grid gap-y-6 sm:grid-cols-[20rem_1fr]
+      sm:gap-x-4"
+    on:submit|preventDefault={handleSubmit}
+  >
+    <div class="relative">
       <input
         class="block w-full h-12 px-5 bg-secondary rounded-3xl font-extrabold
           placeholder-white/40"
@@ -36,7 +43,7 @@
         placeholder="Email address"
       />
       {#if hasError}
-        <p class="mt-1 ml-5 text-error text-[0.75rem] text-left">
+        <p class="mt-1 ml-5 text-error text-[0.75rem] text-left sm:absolute">
           Oops! That doesn’t look like an email address
         </p>
       {/if}
@@ -63,5 +70,11 @@
 
   input.error {
     outline: 2px solid theme('colors.error');
+  }
+
+  @media (min-width: 640px) {
+    section {
+      background-size: cover;
+    }
   }
 </style>
